@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "First-firebae",
+    "plugins": [
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "slug": "First-firebae",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Images/btc.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/Images/btc.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Images/btc.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.Firstfirebae.Firstfirebae",
+      "config": {}
+    },
+    "web": {
+      "favicon": "./assets/Images/btc.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d2197975-aac8-4099-9c84-110433f96ad9"
+      }
+    }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-6966907012388662~7994704115"
+  }
+}

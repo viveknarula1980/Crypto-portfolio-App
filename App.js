@@ -27,7 +27,7 @@ export default function App() {
     // Clear the timeout and switch to TabNavigation after a delay
     const timer = setTimeout(() => {
       setShowFrontPage(false);
-    }, 6000); // Change the delay time as needed (6000 milliseconds = 6 seconds)
+    }, 5000); // Change the delay time as needed (6000 milliseconds = 6 seconds)
 
     // Clear the timer to avoid memory leaks
     return () => {

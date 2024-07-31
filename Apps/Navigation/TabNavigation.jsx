@@ -66,30 +66,7 @@ export default function TabNavigation() {
                         )
                     }}
                 />
-                <Tab.Screen
-                    name='Wallet'
-                    component={WalletScreen}
-                    options={{
-                        tabBarLabel: ({ color }) => (
-                            <Text style={{ color: color, fontSize: 12 }}>Wallets</Text>
-                        ),
-                        tabBarIcon: ({ color, size }) => (
-                            <AntDesign name="wallet" size={24} color="black" />
-                        )
-                    }}
-                />
-                <Tab.Screen
-                    name='Transactions'
-                    component={TranSactionScreen}
-                    options={{
-                        tabBarLabel: ({ color }) => (
-                            <Text style={{ color: color, fontSize: 12 }}>Transactions</Text>
-                        ),
-                        tabBarIcon: ({ color, size }) => (
-                            <Fontisto name="arrow-swap" size={24} color="black" />
-                        )
-                    }}
-                />
+
                 <Tab.Screen
                     name='Setting'
                     component={SettingScreen}

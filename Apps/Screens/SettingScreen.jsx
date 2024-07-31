@@ -1,20 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, Modal, TextInput, Button, ImageBackground, Linking } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as Updates from 'expo-updates';
 
-const SettingScreen = () => {
+const SettingScreen = ({ navigation }) => {
     const [showModal, setShowModal] = useState(false);
-    const [name, setName] = useState('John');
-    const [email, setEmail] = useState('sam@gmail.com');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
 
-    const handleLogout = () => {
-        // Implement your logout logic here
+    useEffect(() => {
+        const fetchUserDetails = async () => {
+            const storedUsername = await AsyncStorage.getItem('username');
+            if (storedUsername) {
+                setName(storedUsername);
+            }
+        };
+
+        fetchUserDetails();
+    }, []);
+
+    const handleLogout = async () => {
+        await AsyncStorage.removeItem('userToken');
+        await AsyncStorage.removeItem('username');
+        await AsyncStorage.removeItem('password');
+        Updates.reloadAsync(); // This will reload the app
     };
 
     const handleEditProfile = () => {
         setShowModal(true);
     };
 
-    const handleSaveChanges = () => {
+    const handleSaveChanges = async () => {
+        await AsyncStorage.setItem('username', name);
+        await AsyncStorage.setItem('email', email);
         setShowModal(false);
     };
 

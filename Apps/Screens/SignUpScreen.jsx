@@ -2,25 +2,25 @@ import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const LoginScreen = ({ navigation, onLogin }) => {
+const SignUpScreen = ({ navigation, onSignUpSuccess }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleLogin = async () => {
-        await onLogin(username, password);
-    };
-
-    const navigateToSignUp = () => {
-        navigation.navigate('SignUp');
-    };
-
-    const navigateToForgotPassword = () => {
-        navigation.navigate('ForgotPassword');
+    const handleSignUp = async () => {
+        try {
+            await AsyncStorage.setItem('username', username);
+            await AsyncStorage.setItem('password', password);
+            onSignUpSuccess(); // Notify parent component of successful signup
+            navigation.navigate('Login'); // Navigate to login screen after successful signup
+        } catch (error) {
+            console.error('Error storing user details:', error);
+            // Handle error appropriately (e.g., show error message to user)
+        }
     };
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Login</Text>
+            <Text style={styles.title}>Sign Up</Text>
             <TextInput
                 style={styles.input}
                 placeholder="Username"
@@ -34,14 +34,11 @@ const LoginScreen = ({ navigation, onLogin }) => {
                 value={password}
                 onChangeText={setPassword}
             />
-            <TouchableOpacity style={styles.button} onPress={handleLogin}>
-                <Text style={styles.buttonText}>Login</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={navigateToSignUp}>
+            <TouchableOpacity style={styles.button} onPress={handleSignUp}>
                 <Text style={styles.buttonText}>Sign Up</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={navigateToForgotPassword}>
-                <Text style={styles.link}>Forgot Password?</Text>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+                <Text style={styles.link}>Already have an account? Login</Text>
             </TouchableOpacity>
         </View>
     );
@@ -90,4 +87,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default LoginScreen;
+export default SignUpScreen;

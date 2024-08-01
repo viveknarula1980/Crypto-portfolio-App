@@ -10,6 +10,9 @@ const TransactionScreen = () => {
         { name: 'Sold Bitcoin', coin: 'BTC', amount: '-0.002', date: '02 Jan 2024', profit: false },
         { name: 'Received Bitcoin', coin: 'BTC', amount: '+0.005', date: '01 Jan 2024', profit: true },
         { name: 'Sold Bitcoin', coin: 'BTC', amount: '-0.002', date: '02 Jan 2024', profit: false },
+        { name: 'Sold Bitcoin', coin: 'BTC', amount: '-0.002', date: '02 Jan 2024', profit: false },
+        { name: 'Sold Bitcoin', coin: 'BTC', amount: '-0.004', date: '09 Jan 2024', profit: false },
+        { name: 'Sold Bitcoin', coin: 'BTC', amount: '-0.008', date: '05 Jan 2024', profit: true },
         // Add more dummy data here
     ];
 

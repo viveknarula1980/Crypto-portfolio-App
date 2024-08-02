@@ -3,8 +3,8 @@ import { View, Text, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import PortfolioScreen from '../Screens/HomeScreens.jsx/PortfolioScreen';
 import BitcoinPrice from '../Screens/BitcoinPrice';
-import WalletScreen from '../Screens/WalletScreen';
-import TranSactionScreen from '../Screens/TranSactionScreen';
+// import WalletScreen from '../Screens/WalletScreen';
+// import TranSactionScreen from '../Screens/TranSactionScreen';
 import SettingScreen from '../Screens/SettingScreen';
 import { Entypo, Octicons, AntDesign, Fontisto, Ionicons } from '@expo/vector-icons';
 
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         left: 0,
         right: 0,
         bottom: 0,
-        borderRadius: 30,
+        borderRadius: 31,
         width: 'calc(100% - 20px)',
         marginHorizontal: 'auto',
         paddingVertical: 28,

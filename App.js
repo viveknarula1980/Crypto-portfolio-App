@@ -11,7 +11,7 @@ import { InterstitialAd, AdEventType, TestIds } from 'react-native-google-mobile
 import FrontPage from './Components/FrontPage';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const adUnitId = __DEV__ ? TestIds.INTERSTITIAL : 'ca-app-pub-xxxxxxxxxxxxx/yyyyyyyyyyyyyy';
+// const adUnitId = __DEV__ ? TestIds.INTERSTITIAL : 'ca-app-pub-xxxxxxxxxxxxx/yyyyyyyyyyyyyy';
 const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
   keywords: ['fashion', 'clothing'],
 });

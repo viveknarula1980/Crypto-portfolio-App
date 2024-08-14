@@ -1,60 +1,53 @@
-Crypto App
+# Crypto App
 
-1.Overview:
+## Overview:
 
-.This repository contains a React Native mobile application for cryptocurrency management.
-.The app integrates the Crigo API to fetch real-time cryptocurrency data.
-.Google Ads are implemented to monetize the app, including banner ads, interactive ads, and reward ads.
-.The app is developed using Expo for streamlined development and deployment.
+- This repository contains a React Native mobile application for cryptocurrency management.
+- The app integrates the Crigo API to fetch real-time cryptocurrency data.
+- Google Ads are implemented to monetize the app, including banner ads, interactive ads, and reward ads.
+- The app is developed using Expo for streamlined development and deployment.
 
+## Features:
 
-2.Features:
+1. **Portfolio Section:**
+   - Users can buy crypto coins and view their portfolio.
+   - Displays the total value of the user's holdings, total quantity of each coin, and current total price.
+   - Provides live price and data updates.
 
-    1.Portfolio Section:
+2. **Price Section:**
+   - Users can check live prices and 24-hour market price details.
+   - Allows users to track price fluctuations, indicating whether prices are up or down.
+   - Graphical representation of coin prices; clicking on coins shows price trends.
 
-    .Users can buy crypto coins and view their portfolio.
-    .Displays the total value of the user's holdings, total quantity of each coin, and current total price.
-    .Provides live price and data updates.
+3. **Wallet Section:**
+   - Users can view their total balance.
 
-    2.Price Section:
+4. **Transaction Section:**
+   - Users can view their transaction history.
 
-    .Users can check live prices and 24-hour market price details.
-    .Allows users to track price fluctuations, indicating whether prices are up or down.
-    .Graphical representation of coin prices; clicking on coins shows price trends.
+5. **Settings Section:**
+   - Users can manage their account settings.
+   - Includes options for editing profile details, privacy settings, and accessing help resources.
+   - Provides a logout feature.
 
-    3.Wallet Section:
+## Technology Stack:
 
-    .Users can view their total balance.
+- React Native for mobile app development.
+- Crigo API for fetching cryptocurrency data.
+- AsyncStorage for local data storage.
 
-    4.Transaction Section:
+## Ads Implementation:
 
-    .Users can view their transaction history.
+- Google Ads are integrated into the app to monetize it.
+- Various types of ads are implemented, including banner ads, interactive ads, and reward ads.
 
-   5.Settings Section:
+## Getting Started:
 
-    . Users can manage their account settings.
-    .Includes options for editing profile details, privacy settings, and accessing help resources.
-    .Provides a logout feature.
+- Clone this repository.
+- Install dependencies using `npm install` or `yarn install`.
+- Install the React Dev Client using `npm install react-dev-client`.
+- Run the app using `expo start`.
 
- 3.Technology Stack:s
+## Contributing:
 
- .React Native for mobile app development.
- .Crigo API for fetching cryptocurrency data.
- .AsyncStorage for local data storage.
-
- 4.Ads Implementation:
-
-  .Google Ads are integrated into the app to monetize it.
-   Various types of ads are implemented, including banner ads, interactive ads, and reward ads.
-
-
- 5.Getting Started:
-
- .Clone this repository.
- .Install dependencies using npm install or yarn install.
- .Install the React Dev Client using 'npm install react-dev-client'.
- .Run the app using 'expo start'.
-
- 5.Contributing:
-
- Contributions are welcome! Please open an issue to discuss proposed changes or submit a pull request.
+Contributions are welcome! Please open an issue to discuss proposed changes or submit a pull request.

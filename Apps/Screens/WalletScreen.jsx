@@ -19,15 +19,15 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    justifyContent: 'flex-start', // Align content at the top
+    justifyContent: 'flex-start',
     alignItems: 'center',
-    paddingTop: 50, // Adjust top padding for space from top
+    paddingTop: 50,
   },
   walletText: {
     marginTop: 5,
     fontSize: 24,
     fontWeight: 'bold',
-    color: 'black', // Adjust text color as needed
+    color: 'black',
   },
 });
 

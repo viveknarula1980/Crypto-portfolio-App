@@ -41,7 +41,7 @@ export default function App() {
 
     const timer = setTimeout(() => {
       setShowFrontPage(false);
-    }, 6000);
+    }, 5000);
 
     return () => {
       clearTimeout(timer);

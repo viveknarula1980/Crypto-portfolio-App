@@ -72,9 +72,7 @@ const styles = StyleSheet.create({
         marginTop: 10,
     },
 
-    // centerText: {
-    //     textAlign: 'center',
-    // },
+    
     header: {
         fontSize: 23,
         // fontWeight: "bold",

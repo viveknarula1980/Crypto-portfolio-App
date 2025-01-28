@@ -317,10 +317,10 @@ const styles = StyleSheet.create({
     fontSize: 24,
     // fontWeight: "bold",
     margin: 10,
-    color: 'black', // Add this property to set text color to white
+    color: 'black', 
     marginTop: 20,
     lineHeight: 23,
-    marginBottom: 5, // Set line height equal to font size (1:1 ratio)
+    marginBottom: 5,
   },
 });
 
